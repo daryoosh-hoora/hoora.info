@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Daryoosh, Hoora, هورا, داریوش" />
+    <meta name="author" content="Daryoosh Hoora">
+    <meta name="description" content="This is Daryoosh Hoora personal website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Hoora.info - @ViewData["Title"]</title>
+
+    <!-- https://realfavicongenerator.net/ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/hoora.info_MVC.styles.css" asp-append-version="true" />
+
+    <script src="https://kit.fontawesome.com/e8d72db96c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="hoora-langbar">
+            <div class="hoora-darktoggle">
+                <input type="checkbox" id="darkmode" name="darkmode" />
+                <label for="darkmode">Dark</label>
+            </div>
+
+            <a title="Not yet." href="">De</a>
+            <span>|</span>
+            <a title="Not yet." href="">Fa</a>
+            <span>|</span>
+            <a href="">En</a>
+        </div>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light hoora-bg-color-1 border-bottom box-shadow-lg mb-3 pt-0 pb-0">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/images/hoora-b-40.png" width="143px" height="40px" alt="hoora.info" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse p-0 m-0 d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1" style="font-size:x-large;">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="About">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022, <span title="by Daryoosh Hoora">hoora.info</span> | <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

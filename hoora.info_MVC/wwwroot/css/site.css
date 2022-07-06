@@ -1,0 +1,72 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  transition: background 0.3s linear, color 0.3s linear;
+}
+
+.hoora-bg-color-1 {
+    background-color: #fff134;
+}
+
+.hoora-langbar {
+    color: white;
+    background-color: dimgray;
+    text-align:right;
+    vertical-align: top;
+    font-size: medium;
+    padding-right:20px;
+}
+
+    .hoora-langbar a {
+        color: white;
+        text-decoration: none;
+    }
+
+        .hoora-langbar a:hover {
+            color: #fff134;
+            border-bottom-style: solid;
+            border-color: #fff134;
+        }
+
+.hoora-comingsoon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hoora-darktoggle {
+    display: inline;
+    margin-right: 30px;
+}
+
+.hoora-darkmode {
+    color: antiquewhite;
+    background-color: #262626;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    position: fixed;
+}
+
+.nav-item:hover {
+    background-color: dimgray;
+}
